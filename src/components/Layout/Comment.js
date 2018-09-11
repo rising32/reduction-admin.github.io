@@ -47,11 +47,11 @@ class Comment extends React.Component {
         <Navbar className="comment" >
             <Nav navbar className="comment-item">
                 <b>Count</b>
-                <input type="text" />
+                <input type="text"  className="item-type" />
             </Nav>
             <Nav navbar className="comment-item">
                 <b>Level</b>
-                <UncontrolledButtonDropdown>
+                <UncontrolledButtonDropdown className="item-type">
                   <DropdownToggle
                     caret
                     color={'white'}>
@@ -66,7 +66,7 @@ class Comment extends React.Component {
             </Nav>
             <Nav navbar className="comment-item">
                 <b>Budgeted/Not Budgeted</b>
-                <UncontrolledButtonDropdown>
+                <UncontrolledButtonDropdown className="item-type">
                   <DropdownToggle
                     caret
                     color={'white'}>
@@ -81,7 +81,7 @@ class Comment extends React.Component {
             </Nav>
             <Nav navbar className="comment-item">
                 <b>Comment Box</b>
-                <textarea></textarea>
+                <textarea className="item-type"></textarea>
             </Nav>
             <Nav navbar className="comment-item">
                 <b>Action</b>
